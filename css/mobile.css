@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  #nav-bar .name {
+    display: none;
+  }
+
+  #nav-bar .link-info {
+    border: 1px solid #ced4da;
+  }
+
+  #about .container-xl {
+    row-gap: 50px;
+  }
+
+  #about {
+    background: linear-gradient(0deg, #f7f7f7 0 50%, #f1f3f5 50% 100%);
+  }
+
+  #project .container-xl .card,
+  #project .content .btn {
+    font-size: 2.2vw;
+  }
+
+  #project .container-xl .content .card-title {
+    font-size: 3.5vw;
+  }
+}

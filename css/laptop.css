@@ -1,0 +1,261 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+/* Thiết lập chung */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Chỉnh sửa phần ảnh banner */
+#banner {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.3)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 400px;
+  padding: 70px;
+}
+
+#banner span {
+  color: #ced4da;
+  font-size: 16px;
+}
+
+/* Chỉnh sửa phần Navbar */
+#nav-bar .link-info {
+  padding: 20px;
+  border-right: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-info a:link,
+.link-info a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #212529;
+}
+
+.link-info a:hover,
+.link-info a:active {
+  color: #199cdb;
+}
+
+.icon {
+  color: #199cdb;
+}
+
+#nav-bar .name {
+  line-height: 1px;
+}
+
+#nav-bar span {
+  font-size: 14px;
+}
+
+/* Chỉnh sửa phần thông tin cá nhân */
+#about {
+  background: linear-gradient(90deg, #f7f7f7 0 50%, #f1f3f5 50% 100%);
+  margin-bottom: 32px;
+}
+
+#about .container-xl {
+  column-gap: 50px;
+}
+
+#about .container-xl #personal-info .info {
+  list-style-type: none;
+}
+
+/* Chỉnh sửa phần thông tin nghề nghiệp */
+#job-info .container-xl {
+  column-gap: 32px;
+}
+
+#job-info .container-xl .experience,
+#job-info .container-xl .education,
+#job-info .container-xl .activities,
+#job-info .container-xl .hobby,
+#job-info .container-xl .language,
+#job-info .container-xl .skills {
+  border: 1px solid #ced4da;
+  row-gap: 32px;
+  margin-bottom: 32px;
+}
+
+#job-info .container-xl .icon {
+  justify-self: center;
+  font-size: 50px;
+  color: #868e96;
+}
+
+#job-info .container-xl h5::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  transform: translate(0, -25%);
+  margin-right: 10px;
+}
+
+#job-info .container-xl .about {
+  padding-inline-start: 18px;
+  list-style: "-  " inside;
+}
+
+#job-info .container-xl .about li:first-child {
+  font-style: italic;
+  list-style: none;
+}
+
+#job-info .container-xl .hobby .content .icon {
+  font-size: 24px;
+  color: #199cdb;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #199cdb;
+}
+
+#job-info .content .ability {
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+#job-info .ability .level {
+  background-color: #f1f3f5;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+#job-info .english .level.beginner,
+#job-info .english .level.intermediate {
+  background-color: #199cdb;
+}
+
+#job-info .html-css .level.beginner {
+  background-color: #199cdb;
+}
+
+#job-info .js .level.beginner {
+  background-color: #199cdb;
+}
+
+/* Chỉnh sửa phần chứng chỉ */
+
+#certificate {
+  background-color: #f7f7f7;
+}
+
+#certificate .content .box {
+  position: relative;
+  border-bottom: 1.5px solid #d6c08d;
+}
+
+#certificate .content .box:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  background-color: #d6c08d;
+  top: 20px;
+  bottom: 20px;
+  left: 0;
+  margin-left: -15px;
+}
+
+#certificate .content .box:last-child {
+  border: none;
+}
+
+#certificate .content .box ul {
+  padding-inline-start: 0;
+  list-style: "-  " inside;
+}
+
+/* Chỉnh sửa phần dự án */
+
+#project .container-xl .card {
+  border: 1px solid #ced4da;
+  font-size: 1.2vw;
+}
+
+#project .container-xl .content .card-title {
+  font-size: 1.8vw;
+  border-bottom: 1px solid #ced4da;
+}
+
+#project .content .project-about {
+  padding: 12px 16px;
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+}
+
+#project .content .project-about .year {
+  padding: 3px 20px;
+  background-color: #199cdb;
+  border-radius: 25px;
+}
+
+#project .content .list-details td {
+  vertical-align: top;
+  padding: 12px;
+}
+
+#project .content .list-details {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#project .content .list-details tr {
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+}
+
+#project .content .btn {
+  background-color: #199cdb;
+  font-size: 1.2vw;
+}
+/* Chỉnh sửa phần footer */
+
+#footer {
+  background-color: #ced4da;
+}
+
+#footer .container-xl .icon {
+  font-size: 3vw;
+}
+
+#footer .container-xl a:link,
+#footer .container-xl a:active {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #212529;
+}
+
+#footer .container-xl a:hover,
+#footer .container-xl a:visited {
+  color: #199cdb;
+}

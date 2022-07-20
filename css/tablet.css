@@ -1,0 +1,14 @@
+@media (max-width: 992px) {
+  /* Navbar */
+  #nav-bar .name {
+    display: none;
+  }
+
+  /* Thông tin cá nhân */
+  #about #personal-info,
+  #about #target {
+    padding: 5px;
+  }
+
+  /* Thông tin nghề nghiệp */
+}
